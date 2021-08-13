@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-launch
+  name: pod-launchmk
   labels:
     app: web
 spec:
   containers:
-    - name: phpmk
+    - name: mk
       image: vimal13/apache-webserver-php
