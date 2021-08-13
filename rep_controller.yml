@@ -3,6 +3,7 @@ kind: ReplicationController
 metadata:
   name: myrc1
 spec:
+  replicas: 4
   selector:
     app: web
   template:
