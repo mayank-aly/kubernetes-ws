@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-launchmk
+  name: mk2
   labels:
     app: web
 spec:
   containers:
     - name: mk
-      image: vimal13/apache-webserver-php
+      image: mayank1998/mayank-docker-images:v4
