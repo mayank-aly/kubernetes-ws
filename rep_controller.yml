@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: mk
-        image: vimal13/apache-webserver-php
+        image: mayank1998/mayank-docker-images:v4
