@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pv-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      env: prod
+  template:
+      metadata:
+        name: pvpod
+        labels:
+          env: prod
+      spec:
+        volumes:
+        - name: mypod-vpc
+          persistentVolumeClaim:
+            claimName: mypvc
+        containers:
+        - name: pvpod
+          image: mayank1998/mayank-docker-images:v1
+          volumeMounts:
+            - mountPath: /var/www/html
+              name: mypod-vpc
