@@ -13,15 +13,4 @@ Beginner section
 Intermediate Section
 ● Volumes in Kubernetes
 ● Persistent volumes and Claims
-● Configmaps and Secrets
-● Resource requirement definition for Pods
-● LivenessProbes and ReadinessProbes
-
-Advanced Section
-● Service Accounts
-● Security Contexts
-● Monitoring Apps
-● Jobs and CronJobs
-● Logging and troubleshooting
-● Understanding Network and network Policies
-● Ingress and Ingress Controller
+● Secrets
